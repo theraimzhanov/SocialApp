@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_10sdp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/shape_diolod"
+    android:layout_height="@dimen/_170sdp">
+    <ImageView
+        android:id="@+id/imagePower"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/power"
+        android:layout_gravity="center"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textttt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/imagePower"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:textColor="#706868"
+        android:text="Are you sure want \n Log Out ?"/>
+    <LinearLayout
+        android:id="@+id/layoutLinear"
+        app:layout_constraintTop_toBottomOf="@id/textttt"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+     <TextView
+         android:id="@+id/btnNo"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/_30sdp"
+         android:layout_margin="@dimen/_10sdp"
+         android:layout_weight="1"
+         android:gravity="center"
+         android:textSize="@dimen/_17sdp"
+         android:textColor="@color/black"
+         android:background="#A18888"
+         android:text="No" />
+        <TextView
+            android:id="@+id/btnYes"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:textSize="@dimen/_17sdp"
+            android:background="@color/purple_200"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:text="Yes" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
